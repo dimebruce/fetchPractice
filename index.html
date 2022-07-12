@@ -7,7 +7,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
-    <h1>This is a practice about fetch!</h1>
+    <div class="container my-5 text-center">
+        <h1>Fetch API</h1>
+        <h2>Rick and Morty</h2>
+        <!-- Boton cargando -->
+          <button class="btn btn-primary mt-5 w-100 d-none" type="button" id="spinnerLoading" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Cargando...
+         </button>
+         <section class="row mt-5" id="cards-dinamicas">
+        </section>
+        <template id="template-cards">
+            <article class="col-12 col-md-6 col-lg-3 mb-3"> 
+                <div class="card text-center shadow">
+                    <img src="" alt="" class="card-img">
+                    <div class="card-body">
+                        <h5 class="card-tittle text-primary lead">
+                            Nombre del personaje
+                        </h5>
+                        <p class="kead text-secondary">Human</p>
+                    </div>
+                </div> 
+            </article>
+        </template>
+    </div>
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
